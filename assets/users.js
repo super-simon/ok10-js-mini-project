@@ -7,7 +7,7 @@ users = fetch(usersUrl)
 
     const usersFragment = document.createDocumentFragment();
     for (const user of users) {
-      const userBlock = document.createElement("div");
+      const userBlock = document.createElement("li");
       userBlock.className = "user";
 
       const img = document.createElement("img");

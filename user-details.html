@@ -7,18 +7,30 @@
     <title>JS Mini Project</title>
     <link rel="stylesheet" href="assets/styles.css" />
     <script src="assets/user.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <main>
       <div class="container">
-        <h1 id="user-name"></h1>
-        <section class="user" id="user">
-          
+        <section class="header">
+          <h1 id="user-name"></h1>
+          <a href="/" class="header__home"><i class="bi bi-house"></i></a>
         </section>
-        <section>
-          <button id="show-publications-button">Publications</button>
+        <section class="user-details">
+          <img class="user-details__img" id="user-img" />
+          <ul class="user-details__list" id="user-details"></ul>
         </section>
-        <section id="publications"></section>
+        <section class="controls">
+          <button class="controls__publications" id="show-publications-button">
+            Publications
+          </button>
+        </section>
+        <section class="publications">
+          <ul class="publications__list by-five" id="publications"></ul>
+        </section>
       </div>
     </main>
   </body>
